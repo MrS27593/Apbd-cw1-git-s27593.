@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class StatisticsHelper {
+public class StatisticsHelper {
+    public static void met1(){
+        
+    }
 }
