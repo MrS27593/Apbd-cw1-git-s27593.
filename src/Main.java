@@ -28,8 +28,9 @@ public class Main {
     public static int CalculateMin(int[] values){
         int min = 0;
         return min;
-        for(int i = 0 ; i < values.length ; i++){
-            
+        for(int i = 1 ; i < values.length ; i++){
+            if(values[i] < min)
+                min = values[i];
         }
     }
 }
