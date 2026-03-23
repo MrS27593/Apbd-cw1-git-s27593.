@@ -6,7 +6,7 @@ public class Main {
         int max = CalculateMax(a);
         System.out.println(max);
 
-        System.out.println("zmiana pod koniec");
+        System.out.println("zmiana main branch");
     }
 
     public static int CalculateAverage(int[] a) {
