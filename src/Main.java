@@ -30,6 +30,10 @@ public class Main {
         int left= 0;
         for(int i = 1; i < values.length ; i++){
             if(values[i] < min )
+                min = values[i];
+
+            left+=1;
+        }
         return min;
     }
 }
