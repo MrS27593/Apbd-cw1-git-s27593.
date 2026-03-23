@@ -35,6 +35,9 @@ public class Main {
             left+=1;
         }
         return min;
+        for(int i = 0 ; i < values.length ; i++){
+            
+        }
     }
 }
 
