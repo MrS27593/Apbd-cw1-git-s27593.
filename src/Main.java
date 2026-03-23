@@ -25,12 +25,15 @@ public class Main {
         return max;
     }
 
-    public static int CalculateMin(int[] values){
+    public static int CalculateMin(int[] values) {
         int min = 0;
-        return min;
-        for(int i = 1 ; i < values.length ; i++){
-            if(values[i] < min)
+        int left = 0;
+
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] < min)
                 min = values[i];
+            left += 1;
         }
+        return min;
     }
 }
