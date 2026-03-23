@@ -35,8 +35,9 @@ public class Main {
             left+=1;
         }
         return min;
-        for(int i = 0 ; i < values.length ; i++){
-            
+        for(int i = 1 ; i < values.length ; i++){
+            if(values[i] < min)
+                min = values[i];
         }
     }
 }
