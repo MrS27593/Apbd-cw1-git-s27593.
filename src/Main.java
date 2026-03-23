@@ -27,6 +27,9 @@ public class Main {
 
     public static int CalculateMin(int[] values){
         int min = 0;
+        int left= 0;
+        for(int i = 1; i < values.length ; i++){
+            if(values[i] < min )
         return min;
     }
 }
