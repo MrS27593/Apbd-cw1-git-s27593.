@@ -1,45 +1,44 @@
 public class Main {
     public static void main(String[] args) {
-        int[] a = {1,213,1,23,5,6};
+        int[] a = {1, 213, 1, 23, 5, 6};
         int average = CalculateAverage(a);
         System.out.println(average);
         int max = CalculateMax(a);
         System.out.println(max);
+
+        System.out.println("zmiana pod koniec");
     }
-    public static int CalculateAverage(int[] a){
+
+    public static int CalculateAverage(int[] a) {
         int score = 0;
-        for (int i = 0; i < a.length ; i++)
+        for (int i = 0; i < a.length; i++)
             score += a[i];
-        score/=a.length;
+        score /= a.length;
         return score;
     }
-    public static int CalculateMax(int[] values){
+
+    public static int CalculateMax(int[] values) {
         int max = 0;
-        int left= 0;
-        for(int i = 1; i < values.length ; i++){
-            if(values[i] > max)
+        int left = 0;
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] > max)
                 max = values[i];
 
-            left+=1;
+            left += 1;
         }
         return max;
     }
 
-    public static int CalculateMin(int[] values){
+    public static int CalculateMin(int[] values) {
         int min = 0;
-        int left= 0;
-        for(int i = 1; i < values.length ; i++){
-            if(values[i] < min )
+
+        int left = 0;
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] < min)
                 min = values[i];
 
-            left+=1;
+            left += 1;
         }
         return min;
-        for(int i = 1 ; i < values.length ; i++){
-            if(values[i] < min)
-                min = values[i];
-        }
     }
 }
-
- 
